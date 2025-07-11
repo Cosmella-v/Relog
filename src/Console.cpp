@@ -225,7 +225,8 @@ bool Console::init() {
     if (!CCLayerColor::initWithColor({0, 0, 0, 220})) return false;
     m_blockMenu = CCMenu::create();
     m_blockMenu->ignoreAnchorPointForPosition(false);
-    m_blockMenuItem = CCMenuItem::create();
+    m_blockMenuItem = CCMenuItemSpriteExtra::create(CCNode::create(), this, nullptr);
+    m_blockMenuItem->m_fSizeMult = 1;
 
     float posX = Mod::get()->getSavedValue<float>("posX", 20);
     float posY = Mod::get()->getSavedValue<float>("posY", 20);

@@ -56,7 +56,7 @@ protected:
     geode::ScrollLayer* m_scrollLayer;
     geode::Scrollbar* m_scrollbar;
     CCMenu* m_blockMenu;
-    CCMenuItem* m_blockMenuItem;
+    CCMenuItemSpriteExtra* m_blockMenuItem;
     DragBar* m_dragBar;
     bool m_minimized = false;
 
