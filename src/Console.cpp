@@ -223,6 +223,7 @@ Console::~Console() {
 
 bool Console::init() {
     if (!CCLayerColor::initWithColor({0, 0, 0, 220})) return false;
+    this->setZOrder(100);
     m_blockMenu = CCMenu::create();
     m_blockMenu->ignoreAnchorPointForPosition(false);
     m_blockMenuItem = CCMenuItemSpriteExtra::create(CCNode::create(), this, nullptr);
